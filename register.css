@@ -1,0 +1,12 @@
+.rtrn-main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.rtrn-img {
+  width: 10vh;
+  height: 10vh;
+  filter: invert(1);
+}/*# sourceMappingURL=register.css.map */

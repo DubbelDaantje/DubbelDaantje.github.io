@@ -1,62 +1,80 @@
-$cadet: #5D737E;
-$greensheen: #64B6AC;
-$celeste: #C0FDFB;
-$aeroblue: #DAFFEF;
-$babypowder: #FCFFFD;
+$cadet: #5d737e;
+$greensheen: #64b6ac;
+$celeste: #c0fdfb;
+$aeroblue: #daffef;
+$babypowder: #fcfffd;
 $grey: #282828;
 $background: #101010;
 
-body{
- background-color: $background;
- display: flex;
- justify-content: center;
-}
-.header-wrapper{
- text-decoration: none;
- position: fixed;
- bottom: 0;
- width: 100%;
+body {
+  background-color: $background;
 }
 
-.header-container{
- text-decoration: none;
- 
-}
-.navbar{
- background-color: $grey;
- position: relative;
- display: flex;
- justify-content: space-around;
- align-items: center;
- padding: 2%;
- text-decoration: none;
-}
-.header{
- box-sizing: border-box;
-}
-.icon{
- filter: invert(1);
-}
-.icon::after{
- content: '';
- display: inline-block;
-position: relative;
- width: 100%;
- transform: scaleX(0);
- height: 4px;
- bottom: 0;
- left: 0;
- background-color: #000000;
- transform-origin: center;
- transition: 0.50s cubic-bezier(1, 0.01, 0, 1);
-}
-.icon:hover::after{
- transform: scaleX(1);
- transform-origin: bottom center;
+
+.header-wrapper {
+  text-decoration: none;
+  position: fixed;
+  right: 2px;
+  bottom: 0;
+  width: 100%;
 }
 
-.icons{
- width:5vh;
- display: flex;
+.header-container {
+  text-decoration: none;
+}
+.navbar {
+  background-color: $grey;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  text-decoration: none;
+}
+.header {
+  box-sizing: border-box;
+}
+.icon {
+  filter: invert(1);
+}
+.icon::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: center;
+  transition: 0.5s cubic-bezier(1, 0.01, 0, 1);
+}
+.icon:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
+.icons {
+  width: 5vh;
+  display: flex;
+}
+//story's
+
+.story-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-y: hidden;
+
+}
+
+
+
+.storyp {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  padding: 8px;
+}

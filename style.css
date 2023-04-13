@@ -1,12 +1,11 @@
 body {
   background-color: #101010;
-  display: flex;
-  justify-content: center;
 }
 
 .header-wrapper {
   text-decoration: none;
   position: fixed;
+  right: 2px;
   bottom: 0;
   width: 100%;
 }
@@ -55,4 +54,19 @@ body {
 .icons {
   width: 5vh;
   display: flex;
+}
+
+.story-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.storyp {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  padding: 8px;
 }/*# sourceMappingURL=style.css.map */
